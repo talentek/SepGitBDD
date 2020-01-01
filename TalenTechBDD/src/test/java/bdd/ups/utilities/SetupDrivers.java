@@ -12,11 +12,12 @@ public class SetupDrivers {
 
 	public static void setupDriver() {
 		WebDriverManager.chromedriver().version("79.0.3945.36").setup();
-		/*ChromeOptions options = new ChromeOptions();
+		
+		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
-		driver = new ChromeDriver(option);*/
+		driver = new ChromeDriver(options);
 	
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
 	}
 
 	public static WebDriver getDriver() {
